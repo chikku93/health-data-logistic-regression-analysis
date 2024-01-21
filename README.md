@@ -16,3 +16,9 @@ The likelihood ratio test is employed to assess the goodness-of-fit for the fina
 
 #### **General Linear Hypothesis Tests**
 The final part of the code conducts hypothesis tests to compare specific groups, such as obese hypertensive subjects vs. normal-weight hypertensive subjects, and other relevant comparisons. The tests are conducted using both continuous BMI and categorized BMI variables.
+
+## Tables and Findings
+
+#### Univariate Descriptive Analysis of the Survey Population (n=500)
+
+![Univariate Descriptive Analysis of the Survey Population](img/TableA.png)
