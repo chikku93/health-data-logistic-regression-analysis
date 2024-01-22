@@ -62,10 +62,10 @@ The final multivariable model excluded physical activity, ethnicity, current smo
 
 ##### Obese hypertensive vs normal-weight hypertensive subjects
 For Obese hypertensive subjects, Hbp=1, BMI= 35.03 (mean obese BMI)
-  Logit[HDA =1] = β0 + β1 x 1 + β2 x 35.03 + β3 Age+ β4 Hours + β5 Gender  
+ $\text{Logit}(HD_A = 1) = \beta_0 + \beta_1 * 1 + \beta_2 * 35.03 + \beta_3 \text{Age} + \beta_4 \text{Hours} + \beta_5 \text{Gender}$  
 
 For normal weight hypertensive subjects, Hbp=1, BMI = 22.32 (mean normal BMI)
-  Logit[HDB =1] = β0 + β1 x 1 + β2 x22.32 + β3 Age+ β4 Hours + β5 Gender  
+ $\text{Logit}(HD_B = 1) = \beta_0  + \beta_1 * 1 + \beta_2 * 22.32 + \beta_3 \text{Age} + \beta_4 \text{Hours} + \beta_5 \text{Gender}$  
 
 OR = e -0.03  x (35.03-22.32) 
 OR = 0.72   C.I = (0.21,2.52)
@@ -73,10 +73,10 @@ After controlling for age, hours worked per week, and gender the fitted odds of 
 
 ##### Obese hypertensive vs overweight hypertensive subjects
 For Obese hypertensive subjects, Hbp=1, BMI= 35.03 (mean obese BMI)
-Logit[HDA =1] = β0 + β1 x 1 + β2 x 35.03 + β3 Age+ β4 Hours + β5 Gender 
+$\text{Logit}(HD_A = 1) = \beta_0 + \beta_1 * 1 + \beta_2 * 35.03 + \beta_3 \text{Age} + \beta_4 \text{Hours} + \beta_5 \text{Gender}$ 
 
 For overweight hypertensive subjects, Hbp=1, BMI = 27.13 (mean overweight BMI)
-Logit[HDB =1] = β0 + β1 x 1 + β2 x 27.13 + β3 Age+ β4 Hours + β5 Gender 
+$\text{Logit}(HD_B = 1) = \beta_0 + \beta_1 * 1 +  \beta_2 *  27.13 + beta_3 \text{Age} + \beta_4 \text{Hours} + \beta_5 \text{Gender}$ 
 
 OR = e -0.03  x (35.03-27.13) 
 OR = 0.81   C.I = (0.37,1.77)
@@ -84,10 +84,10 @@ After controlling for age, hours worked per week, and gender the fitted odds of 
 
 ##### Obese hypertensive vs overweight non-hypertensive subjects
 For Obese hypertensive subjects, Hbp=1, BMI= 35.03 (mean obese BMI)
-Logit[HDA =1] = β0 + β1 x 1 + β2 x 35.03 + β3 Age+ β4 Hours + β5 Gender 
+$\text{Logit}(HD_A = 1) = \beta_0 + \beta_1 * 1 + \beta_2 * 35.03 + \beta_3 \text{Age} + \beta_4 \text{Hours} + \beta_5 \text{Gender}$
 
 For overweight non-hypertensive subjects, Hbp=0, BMI = 27.13 (mean overweight BMI)
-Logit[HDB =1] = β0 + β1 x 0 + β2 x 27.13 + β3 Age+ β4 Hours + β5 Gender 
+$\text{Logit}(HD_B = 1) = \beta_0 + \beta_1 * 0 + \beta_2 * 27.13 + \beta_3 \text{Age} + \beta_4 \text{Hours} + \beta_5 \text{Gender}$ 
 
 OR = e 0.76-0.03(35.03-27.13) 
 OR = 1.75   C.I = (0.49,6.29)
@@ -95,10 +95,10 @@ After controlling for age, hours worked per week, and gender the fitted odds of 
 
 ##### Normal weight hypertensive vs overweight non-hypertensive subjects
 For normal weight hypertensive subjects, Hbp=1, BMI = 22.32 (mean normal BMI)
-Logit[HDB =1] = β0 + β1 x 1 + β2 x22.32 + β3 Age+ β4 Hours + β5 Gender  
+$\text{Logit}(HD_A = 1) = \beta_0  + \beta_1 * 1 + \beta_2 * 22.32 + \beta_3 \text{Age} + \beta_4 \text{Hours} + \beta_5 \text{Gender}$ 
 
 For overweight non-hypertensive subjects, Hbp=0, BMI = 27.13 (mean overweight BMI)
-$Logit[HD_B =1] = β_0 + β_1 x 0 + β_2 x 27.13 + β_3 Age+ β_4 Hours + β_5 Gender$  
+$\text{Logit}(HD_B = 1) = \beta_0 + \beta_1 * 0 + \beta_2 * 27.13 + \beta_3 \text{Age} + \beta_4 \text{Hours} + \beta_5 \text{Gender}$  
 
 OR = e 0.76-0.03(22.32-27.13) 
 OR = 2.43    C.I = (0.79,7.45)
