@@ -98,7 +98,7 @@ For normal weight hypertensive subjects, Hbp=1, BMI = 22.32 (mean normal BMI)
 Logit[HDB =1] = β0 + β1 x 1 + β2 x22.32 + β3 Age+ β4 Hours + β5 Gender  
 
 For overweight non-hypertensive subjects, Hbp=0, BMI = 27.13 (mean overweight BMI)
-Logit[HDB =1] = β0 + β1 x 0 + β2 x 27.13 + β3 Age+ β4 Hours + β5 Gender  
+$$ Logit[HD_B =1] = β_0 + β_1 x 0 + β_2 x 27.13 + β_3 Age+ β_4 Hours + β_5 Gender  
 
 OR = e 0.76-0.03(22.32-27.13) 
 OR = 2.43    C.I = (0.79,7.45)
