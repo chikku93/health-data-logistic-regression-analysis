@@ -1,7 +1,7 @@
 # ---------------------------------------------------------------------------------------------------
 #  Refitting the final model & conducting interesting general linear hypothesis tests using model 10
 # ---------------------------------------------------------------------------------------------------
-a.model8<-readRDS("C:/Users/Shajisree/Desktop/Rfiles/model_file.rds")
+a.model8<-readRDS("models/finalLogisticModel.rds")
 
 # install.packages("multcomp")
 if (!requireNamespace("multcomp", quietly = TRUE)) {
@@ -9,8 +9,7 @@ if (!requireNamespace("multcomp", quietly = TRUE)) {
 }
 library("multcomp")
 
-
-#Summarise BMI for different categories
+BMI<-as.numeric(a.model8[["data"]][["BMI"]])
 summary(BMI[BMI>=30])#To find mean obese BMI
 summary(BMI[c((18.5<=BMI) & (BMI<25))])#To find mean normal healthy BMI
 summary(BMI[c((25<=BMI) & (BMI<30))])#To find mean overweight BMI

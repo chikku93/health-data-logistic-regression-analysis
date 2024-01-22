@@ -13,7 +13,7 @@ heart<-read.csv(args[1],header=T)
 names(heart) # List variable names
 
 # Convert variables to factors and assign value labels
-source('C:/Users/Shajisree/Desktop/Rfiles/TransformVariable.R')
+source('TransformVariable.R')
 heart <- transform_variable(heart, "hbp", c('Yes', 'No'))
 heart <- transform_variable(heart, "drink", c('Yes', 'No'))
 heart <- transform_variable(heart, "ethnicity", c('Other', 'Other', 'Other', 'Other', 'Latino', 'White'))
@@ -28,7 +28,7 @@ attach(heart)
 #  Data analysis
 #-----------------------------------------------------------------------
 # Descriptive Statistics
-source('C:/Users/Shajisree/Desktop/Rfiles/Functions1.R')
+source('Commons.R')
 
 descript(age)
 descript(hours)
@@ -154,6 +154,4 @@ LRT<-cbind(LRT=a.model8$null.deviance-a.model8$deviance,
            p.value=1-pchisq(a.model8$null.deviance-a.model8$deviance,a.model8$df.null-a.model8$df.residual))
 LRT
 
-saveRDS(a.model8, file = "C:/Users/Shajisree/Desktop/Rfiles/model_file.rds")
-
-
+saveRDS(a.model8, file = "models/finalLogisticModel.rds")
